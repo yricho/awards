@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import CardItem from "./common/Card";
@@ -30,13 +31,13 @@ const CategoryItems = ({ item, callBack }) => {
 
     return (
         <div className="my-8">
-            <h2 className="text-2xl font-medium p-2 bg-gray-200">
+            <h2 className="title-category text-2xl font-medium p-2 bg-gray-200">
                 {title}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     items.map((item, index) =>
-                        <div key={index}>
+                        <div key={index} className={`item-${index}`}>
                             <CardItem
                                 selected={item.id === selectItem.id}
                                 item={item}

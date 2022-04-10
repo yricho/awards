@@ -14,9 +14,7 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [storageData, setStorageData] = useState(null);
 
-  useEffect(() => {
-    handleFetch();
-  }, [])
+  useEffect(() => { handleFetch(); }, [])
 
   const handleFetch = async () => {
     try {

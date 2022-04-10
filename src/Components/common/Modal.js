@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 
@@ -9,7 +10,7 @@ const Modal = (props) => {
             <div className="fixed flex items-center text-elephant justify-center top-0 bg-elephant inset-x-0 h-screen bg-opacity-75 z-20">
                 <div className="bg-white p-4 rounded-md" style={{ maxWidth: 400 }}>
                     <div className="flex justify-between pb-4">
-                        <span className="text-lg font-medium">
+                        <span className="title text-lg font-medium">
                             {title}
                         </span>
                         {
@@ -22,7 +23,7 @@ const Modal = (props) => {
                             )
                         }
                     </div>
-                    <div className="max-h-64 overflow-x-auto">
+                    <div className="content max-h-64 overflow-x-auto">
                         {children}
                     </div>
                 </div>

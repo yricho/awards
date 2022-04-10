@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
                     Awards {new Date().getFullYear()}
                 </h1>
             </Nav>
-            <main className="max-w-screen-lg mx-4 lg:mx-auto">
+            <main className="main-content max-w-screen-lg mx-4 lg:mx-auto">
                 {children}
             </main>
             <Footer />
