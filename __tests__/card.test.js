@@ -31,15 +31,3 @@ test('CardList Render', () => {
     expect(title.text()).toBe('Sacha Baron Cohen')
     expect(category.text()).toBe('Best Supporting Actor')
 })
-
-
-// test('toggleDone complete and incomplete todo', () => {
-//     const startState = [{ id: 1, done: false, text: "Buy Milk" }]
-//     const finState = toggleDone(startState, 1)
-//     expect(finState).toEqual([{
-//         id: 1,
-//         done: true,
-//         text: "Buy Milk"
-//     }])
-// })
-
